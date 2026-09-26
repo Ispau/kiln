@@ -1210,8 +1210,38 @@ body.preview .panel,body.preview .presets{display:none}
   <ul lang="es"><li>Los looks más pesados son Kaleido, Liquid, Pixel sort, Thermal y Neon; en una jam el director usa un tratamiento cada vez.</li><li>Chrome o Edge en un ordenador con tarjeta gráfica dedicada dan los renders más rápidos.</li><li>Un render sigue si cambias de pestaña, solo que más lento: deja la pestaña abierta hasta que termine.</li></ul>
 </section>
 
+<section id="g-req">
+  <h2><span class="n">14</span><span lang="en">Requirements</span><span lang="es">Requisitos</span></h2>
+  <p lang="en">KILN runs in the browser on your own computer. A modest machine does not make the video worse: the render is built frame by frame, so the file comes out the same, only later. The graphics card decides how smooth the live preview is and how fast a render finishes.</p>
+  <p lang="es">KILN funciona en el navegador, en tu propio ordenador. Un equipo modesto no empeora el vídeo: el render se construye fotograma a fotograma, así que el archivo sale igual, solo que tarda más. La gráfica decide lo fluida que va la vista previa y lo rápido que termina un render.</p>
+  <table class="gd-table">
+    <tr><th></th><th><span lang="en">Minimum</span><span lang="es">Mínimo</span></th><th><span lang="en">Recommended</span><span lang="es">Recomendado</span></th></tr>
+    <tr><td><span lang="en">Browser</span><span lang="es">Navegador</span></td><td colspan="2"><span lang="en">Chrome or Edge, up to date, on a computer</span><span lang="es">Chrome o Edge, actualizado, en ordenador</span></td></tr>
+    <tr><td><span lang="en">Graphics</span><span lang="es">Gráfica</span></td><td><span lang="en">A recent integrated GPU</span><span lang="es">Una gráfica integrada moderna</span></td><td><span lang="en">A dedicated graphics card</span><span lang="es">Una gráfica dedicada</span></td></tr>
+    <tr><td>RAM</td><td>8 GB</td><td>16 GB</td></tr>
+    <tr><td><span lang="en">Disk</span><span lang="es">Disco</span></td><td><span lang="en">Room for your videos</span><span lang="es">Espacio para tus vídeos</span></td><td><span lang="en">An SSD with room to spare</span><span lang="es">Un SSD con espacio de sobra</span></td></tr>
+    <tr><td><span lang="en">Good for</span><span lang="es">Para</span></td><td><span lang="en">Designing, jams, exports at 1K</span><span lang="es">Diseñar, jams, exportar en 1K</span></td><td><span lang="en">Jams with video, 4K exports and Pro quality in reasonable times</span><span lang="es">Jams con vídeo, exportar en 4K y calidad Pro en tiempos razonables</span></td></tr>
+  </table>
+  <ul lang="en">
+    <li><b>Disk space</b>: about 95 MB per minute of video at 1K and 375 MB per minute at 4K (30 fps).</li>
+    <li><b>Internet</b>: only when the app opens, to load its typefaces and the 3D engine. Your files never leave your computer.</li>
+    <li><b>Files</b>: audio mp3, wav, m4a, aac, ogg, flac, opus · video mp4, webm, mov, m4v · images jpg, png, webp, gif, avif · lyrics .srt, .lrc.</li>
+    <li><b>Other browsers</b> run the studio, but may lack the video encoder; Rec then records the screen instead (Live).</li>
+    <li><b>Tablets and phones</b> can show the studio, but KILN is made for a computer — especially for rendering.</li>
+  </ul>
+  <ul lang="es">
+    <li><b>Espacio en disco</b>: unos 95 MB por minuto de vídeo en 1K y 375 MB por minuto en 4K (a 30 fps).</li>
+    <li><b>Internet</b>: solo al abrir la app, para cargar las tipografías y el motor 3D. Tus archivos nunca salen de tu ordenador.</li>
+    <li><b>Archivos</b>: audio mp3, wav, m4a, aac, ogg, flac, opus · vídeo mp4, webm, mov, m4v · imágenes jpg, png, webp, gif, avif · letras .srt, .lrc.</li>
+    <li><b>Otros navegadores</b> abren el estudio, pero puede faltarles el codificador de vídeo; entonces Rec graba la pantalla (Live).</li>
+    <li><b>Tablets y móviles</b> pueden mostrar el estudio, pero KILN está pensado para ordenador, sobre todo para renderizar.</li>
+  </ul>
+  <div class="gd-tip" lang="en">Check your cut in <b>Draft</b> and keep <b>Pro</b> for the final render: Pro takes about five to seven times longer.</div>
+  <div class="gd-tip" lang="es">Revisa el corte en <b>Draft</b> y deja <b>Pro</b> para el render final: Pro tarda entre cinco y siete veces más.</div>
+</section>
+
 <section id="g-keys">
-  <h2><span class="n">14</span><span lang="en">Keyboard shortcuts</span><span lang="es">Atajos de teclado</span></h2>
+  <h2><span class="n">15</span><span lang="en">Keyboard shortcuts</span><span lang="es">Atajos de teclado</span></h2>
   <table class="gd-table gd-keys">
     <tr><td><kbd>Space</kbd></td><td><span lang="en">Play / pause (or click the picture)</span><span lang="es">Reproducir / pausa (o clic en la imagen)</span></td></tr>
     <tr><td><kbd>J</kbd></td><td>Jam Session</td></tr>
@@ -1234,7 +1264,7 @@ body.preview .panel,body.preview .presets{display:none}
 </section>
 
 <section id="g-faq" class="gd-faq">
-  <h2><span class="n">15</span>FAQ</h2>
+  <h2><span class="n">16</span>FAQ</h2>
   <details><summary><span lang="en">My .mp3 doesn't show up in the file picker.</span><span lang="es">Mi .mp3 no aparece en el selector de archivos.</span></summary>
     <p lang="en">Drop the file anywhere on the window — KILN takes it straight into the Jam. In the picker, switching the filter to <i>All files</i> shows it too. Accepted: mp3, wav, m4a, aac, ogg, flac, opus.</p>
     <p lang="es">Suelta el archivo en cualquier parte de la ventana: KILN lo lleva directo a la Jam. En el selector, cambiar el filtro a <i>Todos los archivos</i> también lo muestra. Formatos: mp3, wav, m4a, aac, ogg, flac, opus.</p></details>
@@ -1259,6 +1289,9 @@ body.preview .panel,body.preview .presets{display:none}
   <details><summary><span lang="en">How long does a render take?</span><span lang="es">¿Cuánto tarda un render?</span></summary>
     <p lang="en">It depends on the size, the frame rate and how heavy the looks are, and the dialog measures it for you (× real time and time left). As a guide: 1K Draft on a light scene renders faster than the song plays; Pro takes about five to seven times longer than Draft, and 4K Pro with heavy looks can take many times the song's length.</p>
     <p lang="es">Depende del tamaño, de los fotogramas por segundo y de lo pesados que sean los looks, y el diálogo lo mide por ti (× tiempo real y tiempo restante). Como referencia: 1K en Draft con una escena ligera se renderiza más rápido de lo que dura la canción; Pro tarda entre cinco y siete veces más que Draft, y 4K Pro con looks pesados puede tardar muchas veces la duración de la canción.</p></details>
+  <details><summary><span lang="en">Do I need a powerful graphics card?</span><span lang="es">¿Necesito una gráfica potente?</span></summary>
+    <p lang="en">No. The graphics card only changes how smooth the live preview is and how fast a render finishes — the video itself comes out the same, because it is rendered frame by frame. A dedicated card with a hardware video encoder (the render dialog then says <i>H.264 · GPU</i>) makes 4K and Pro renders much faster. See <b>Requirements</b>.</p>
+    <p lang="es">No. La gráfica solo cambia lo fluida que va la vista previa y lo rápido que termina un render; el vídeo sale igual, porque se renderiza fotograma a fotograma. Una gráfica dedicada con codificador de vídeo por hardware (el diálogo de render pone <i>H.264 · GPU</i>) hace mucho más rápidos los renders en 4K y Pro. Mira <b>Requisitos</b>.</p></details>
   <details><summary><span lang="en">Which browser should I use?</span><span lang="es">¿Qué navegador uso?</span></summary>
     <p lang="en">Chrome or Edge on a computer. Rendering uses the browser's video encoder (WebCodecs); where it is missing, Rec falls back to the Live recording.</p>
     <p lang="es">Chrome o Edge en ordenador. El render usa el codificador de vídeo del navegador (WebCodecs); si no está, Rec pasa a la grabación Live.</p></details>
